@@ -1,0 +1,14 @@
+<resources>
+
+    //Overall
+    <string name="app_name">Simple To-Do List</string>
+
+    //MainActivity
+    <string name="createNewItemButton">Add</string>
+
+    //NewItemCreator
+    <string name="listNameEditText">Enter List Item</string>
+    //Swap name to hint instead, later
+    <string name="createButton">Add</string>
+
+</resources>

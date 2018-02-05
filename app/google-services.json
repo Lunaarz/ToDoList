@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "216464974649",
+    "firebase_url": "https://simple-to-do-list-a784c.firebaseio.com",
+    "project_id": "simple-to-do-list-a784c",
+    "storage_bucket": "simple-to-do-list-a784c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216464974649:android:0ec8fdc5b2adc2aa",
+        "android_client_info": {
+          "package_name": "com.example.autum.to_dolist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216464974649-9ovub8oidhp6lsg5145rv8jtkhq2jpfc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjw5V3o_UFu6R5J1Za_kaEas02QeqEvFw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
