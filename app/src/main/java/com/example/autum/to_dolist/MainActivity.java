@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 //On Click, goes to CreateNewItem Page
                 Intent listCreatorScreen = new Intent(getApplicationContext(), NewItemCreator.class);
                 startActivity(listCreatorScreen);
-
+//test shit
             }
         });
 
