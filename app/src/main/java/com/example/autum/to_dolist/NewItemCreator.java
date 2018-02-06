@@ -24,7 +24,7 @@ public class NewItemCreator extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_item_creator);
 
-        editTask = (EditText) findViewById(R.id.listNameEditText);
+
         database = FirebaseDatabase.getInstance();
         Button createButton = (Button) findViewById(R.id.createButton);
 
@@ -36,22 +36,17 @@ public class NewItemCreator extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-
-                String name = editTask.getText().toString();
-
                 Intent toMainActivity = new Intent(getApplicationContext(), MainActivity.class);
-                toMainActivity.getExtras("newTask", name);
-
                 //end database test commands
                 addButtonClicked(editTask);
                 startActivity(toMainActivity);
-
             }
         });
 
     }
 
-    public void addButtonClicked(EditText editTask){
+    public void addButtonClicked(){
+        editTask = (EditText) findViewById(R.id.listNameEditText);
         String name = editTask.getText().toString();
         long date = System.currentTimeMillis();
         SimpleDateFormat sdf = new SimpleDateFormat("MMMM MM dd, yyyy h:mm a");
