@@ -77,12 +77,7 @@ public class MainActivity extends AppCompatActivity {
         //myItems.toArray();
         String[] myItems = {"red", "orange", "yellow"};
         //Build Adapter
-        ArrayAdapter<String> adapter =
-                new ArrayAdapter<String>(this, R.layout.list_view_main, myItems);
-        // HERE DO THIS Make an Array of strings here to add to display
-        //Configure List View
-        ListView mainListView = (ListView) findViewById(R.id.mainListView);
-        mainListView.setAdapter(adapter);
+
 
         int i = 0;
         for(DataSnapshot ds : dataSnapshot.getChildren()) {
@@ -94,5 +89,11 @@ public class MainActivity extends AppCompatActivity {
             myItemsFromFirebase[j] = ds.child("name").getValue().toString();
             j++;
         }
+        ArrayAdapter<String> adapter =
+                new ArrayAdapter<String>(this, R.layout.list_view_main, myItemsFromFirebase);
+        // HERE DO THIS Make an Array of strings here to add to display
+        //Configure List View
+        ListView mainListView = (ListView) findViewById(R.id.mainListView);
+        mainListView.setAdapter(adapter);
     }
 }
