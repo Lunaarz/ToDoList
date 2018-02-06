@@ -49,9 +49,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void populateListView() {
         //Create Array of Values to feed to list
-        ArrayList<String> myItems = {"red", "orange", "yellow"};
-        myItems.toArray();
-
+        //ArrayList<String> myItems = {"red", "orange", "yellow"};
+        //myItems.toArray();
+        String[] myItems = {"red", "orange", "yellow"};
         //Build Adapter
         ArrayAdapter<String> adapter =
                 new ArrayAdapter<String>(this, R.layout.list_view_main, myItems);
