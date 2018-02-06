@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         //Build Adapter
         ArrayAdapter<String> adapter =
                 new ArrayAdapter<String>(this, R.layout.list_view_main, myItems);
-
+        // HERE DO THIS Make an Array of strings here to add to display
         //Configure List View
         ListView mainListView = (ListView) findViewById(R.id.mainListView);
         mainListView.setAdapter(adapter);
