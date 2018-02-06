@@ -14,8 +14,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Task List View
-        ListView allListsListView = (ListView) findViewById(R.id.allListsListView);
 
         //Add Button
         Button createNewItemButton = (Button) findViewById(R.id.createNewItemButton);
@@ -31,9 +29,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //Collect task data from NewItemCreation Screen
-//        if (getIntent().hasExtra("task")) {
-//
-//        }
+
+        ListView mainListView = (ListView) findViewById(R.id.mainListView);
+        mainListView.setOnItemClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+
+
+
     }
 }

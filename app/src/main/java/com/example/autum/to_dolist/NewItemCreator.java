@@ -16,14 +16,16 @@ public class NewItemCreator extends AppCompatActivity {
 
         //Add Button
         Button createButton = (Button) findViewById(R.id.createButton);
+
+        //Text box and text formatting
+        EditText listNameEditText = (EditText) findViewById(R.id.listNameEditText);
+        String listItem = listNameEditText.getText().toString();
+
         createButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                EditText listNameEditText = (EditText) findViewById(R.id.listNameEditText);
-                String listItem = listNameEditText.getText().toString();
 
                 Intent toMainActivity = new Intent(getApplicationContext(), MainActivity.class);
-                toMainActivity.putExtra("task", listItem);
                 startActivity(toMainActivity);
 
             }
