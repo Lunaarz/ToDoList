@@ -38,7 +38,7 @@ public class NewItemCreator extends AppCompatActivity {
 
                 Intent toMainActivity = new Intent(getApplicationContext(), MainActivity.class);
                 //end database test commands
-                addButtonClicked(editTask);
+                addButtonClicked();
                 startActivity(toMainActivity);
             }
         });
