@@ -23,8 +23,9 @@ public class NewItemCreator extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_item_creator);
+
+
         database = FirebaseDatabase.getInstance();
-        //Add Button
         Button createButton = (Button) findViewById(R.id.createButton);
 
         //Text box and text formatting
@@ -35,12 +36,10 @@ public class NewItemCreator extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-
+                Intent toMainActivity = new Intent(getApplicationContext(), MainActivity.class);
                 //end database test commands
                 addButtonClicked();
-                Intent toMainActivity = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(toMainActivity);
-
             }
         });
 
@@ -58,5 +57,6 @@ public class NewItemCreator extends AppCompatActivity {
         newTask.child("name").setValue(name);
         newTask.child("time").setValue(dateString);
         Log.d(TAG, "addButtonClicked: Data sent");
+
     }
 }
